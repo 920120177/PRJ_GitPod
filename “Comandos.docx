@@ -1,0 +1,35 @@
+git status Mostra o status atual do repositório
+
+git add caminhoDoArquivo Adiciona um arquivo ao repositório
+
+git rm caminhoDoArquivo Remove um arquivo ao repositório
+
+git commit -m “descriçao” Concretiza as mudanças (edição, criação ou deleção) e pede
+uma descrição do que foi feito. Obs: Um editor de texto se
+abrirá, não se esqueça de salvar a descrição, do contrário, a
+mudança será ignorada.
+
+git log Visualiza histórico de todos os commits dados
+
+git branch nomeDaRamificação Cria uma nova ramificação do código, assim, se pode alterar
+coisa sem medo de ferrar o código original, mas não sem antes
+dar o próximo comando.
+
+git branch Mostra a lista de Branchs
+
+git checkout nomeDaRamificação Vai para a ramificação criada, agora sim você pode alterar o
+código! ATENÇÃO: Se você estiver trabalhando em um time,
+jamais dê commits na vertente principal do código (a master),
+sempre crie uma ramificação e lá ponha suas alterações.
+
+git checkout master Volta para a vertente principal do código.
+
+git merge nomeDaRamificação Pega todas as modificações feitas em “nomeDaRamificação” e
+transfere para a vertente principal do código, isso pode gerar
+alguns conflitos que devem ser resolvidos manualmente.
+
+git revert noedit idDoÚltimoComit idDoCom
+mitASerExcluido
+Define um intervalo de commits que devem ser “desfeitos”.
+git push -u origin nomedabranch Enviará todos os commits que ainda não estiverem sido
+enviados para o repositório .
